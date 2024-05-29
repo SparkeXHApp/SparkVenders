@@ -39,4 +39,49 @@ TODO: Add long description of the pod here.
   # s.public_header_files = 'Pod/Classes/**/*.h'
   # s.frameworks = 'UIKit', 'MapKit'
   # s.dependency 'AFNetworking', '~> 2.3'
+  
+  s.dependency 'ASIHTTPRequest'
+  s.dependency 'SDCycleScrollView'
+  s.dependency 'SnapKit'
+  s.dependency 'TZImagePickerController'
+  s.dependency 'SensorsAnalyticsSDK/Core'
+  s.dependency 'SensorsAnalyticsSDK/Exception'
+  s.dependency 'SensorsAnalyticsSDK/Exposure'
+  s.dependency 'SDWebImage', '4.4.8'
+  
+  s.subspec 'FJDeepSleepPreventer' do |ss|
+      ss.source_files = 'AppVenders/Classes/FJDeepSleepPreventer/**/*'
+      ss.resource_bundles = {
+            'FJDeepSleepPreventer' => ['AppVenders/Assets/FJDeepSleepPreventer/*.wav'],
+        }
+  end
+  
+  s.subspec 'XLPhotoBrowser+CoderXL' do |ss|
+      ss.source_files = 'AppVenders/Classes/XLPhotoBrowser+CoderXL/**/*'
+      ss.resource_bundles = {
+            'XLPhotoBrowser+CoderXL' => ['AppVenders/Assets/XLPhotoBrowser+CoderXL/*.png'],
+        }
+  end
+  
+  s.subspec 'RSKImageCropper' do |ss|
+      ss.source_files = 'AppVenders/Classes/RSKImageCropper/**/*'
+      ss.resource_bundles = {
+            'RSKImageCropper' => ['AppVenders/Assets/RSKImageCropper/*.bundle'],
+        }
+  end
+  
+  s.subspec 'SPEUploadPhoto' do |ss|
+      ss.source_files = 'AppVenders/Classes/SPEUploadPhoto/**/*'
+      ss.resource_bundles = {
+            'SPEUploadPhoto' => ['AppVenders/Assets/SPEUploadPhoto/*.xib'],
+        }
+  end
+  
+  s.subspec 'ZLPhotoLib' do |ss|
+      ss.source_files = 'AppVenders/Classes/ZLPhotoLib/**/*'
+      ss.resource_bundles = {
+            'ZLPhotoLib' => ['AppVenders/Assets/ZLPhotoLib/*.bundle'],
+        }
+  end
+  
 end

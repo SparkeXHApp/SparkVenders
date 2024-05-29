@@ -1,0 +1,6 @@
+framework module SparkVenders {
+  umbrella header "SparkVenders-umbrella.h"
+
+  export *
+  module * { export * }
+}
