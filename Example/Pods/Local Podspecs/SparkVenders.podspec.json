@@ -18,5 +18,78 @@
   "platforms": {
     "ios": "10.0"
   },
-  "source_files": "SparkVenders/Classes/**/*"
+  "source_files": "SparkVenders/Classes/**/*",
+  "dependencies": {
+    "ASIHTTPRequest": [
+
+    ],
+    "SDCycleScrollView": [
+
+    ],
+    "SnapKit": [
+
+    ],
+    "TZImagePickerController": [
+
+    ],
+    "SensorsAnalyticsSDK/Core": [
+
+    ],
+    "SensorsAnalyticsSDK/Exception": [
+
+    ],
+    "SensorsAnalyticsSDK/Exposure": [
+
+    ],
+    "SDWebImage": [
+      "4.4.8"
+    ]
+  },
+  "subspecs": [
+    {
+      "name": "FJDeepSleepPreventer",
+      "source_files": "AppVenders/Classes/FJDeepSleepPreventer/**/*",
+      "resource_bundles": {
+        "FJDeepSleepPreventer": [
+          "AppVenders/Assets/FJDeepSleepPreventer/*.wav"
+        ]
+      }
+    },
+    {
+      "name": "XLPhotoBrowser+CoderXL",
+      "source_files": "AppVenders/Classes/XLPhotoBrowser+CoderXL/**/*",
+      "resource_bundles": {
+        "XLPhotoBrowser+CoderXL": [
+          "AppVenders/Assets/XLPhotoBrowser+CoderXL/*.png"
+        ]
+      }
+    },
+    {
+      "name": "RSKImageCropper",
+      "source_files": "AppVenders/Classes/RSKImageCropper/**/*",
+      "resource_bundles": {
+        "RSKImageCropper": [
+          "AppVenders/Assets/RSKImageCropper/*.bundle"
+        ]
+      }
+    },
+    {
+      "name": "SPEUploadPhoto",
+      "source_files": "AppVenders/Classes/SPEUploadPhoto/**/*",
+      "resource_bundles": {
+        "SPEUploadPhoto": [
+          "AppVenders/Assets/SPEUploadPhoto/*.xib"
+        ]
+      }
+    },
+    {
+      "name": "ZLPhotoLib",
+      "source_files": "AppVenders/Classes/ZLPhotoLib/**/*",
+      "resource_bundles": {
+        "ZLPhotoLib": [
+          "AppVenders/Assets/ZLPhotoLib/*.bundle"
+        ]
+      }
+    }
+  ]
 }

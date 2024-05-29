@@ -1,10 +1,110 @@
 PODS:
+  - ASIHTTPRequest (1.8.2):
+    - ASIHTTPRequest/ASIWebPageRequest (= 1.8.2)
+    - ASIHTTPRequest/CloudFiles (= 1.8.2)
+    - ASIHTTPRequest/Core (= 1.8.2)
+    - ASIHTTPRequest/S3 (= 1.8.2)
+  - ASIHTTPRequest/ASIWebPageRequest (1.8.2):
+    - ASIHTTPRequest/Core
+  - ASIHTTPRequest/CloudFiles (1.8.2):
+    - ASIHTTPRequest/Core
+  - ASIHTTPRequest/Core (1.8.2):
+    - Reachability
+  - ASIHTTPRequest/S3 (1.8.2):
+    - ASIHTTPRequest/Core
   - FBSnapshotTestCase (2.1.4):
     - FBSnapshotTestCase/SwiftSupport (= 2.1.4)
   - FBSnapshotTestCase/Core (2.1.4)
   - FBSnapshotTestCase/SwiftSupport (2.1.4):
     - FBSnapshotTestCase/Core
-  - SparkVenders (0.1.0)
+  - Reachability (3.2)
+  - SDCycleScrollView (1.75):
+    - SDWebImage (>= 4.0.0)
+  - SDWebImage (4.4.8):
+    - SDWebImage/Core (= 4.4.8)
+  - SDWebImage/Core (4.4.8)
+  - SensorsAnalyticsSDK/__Store (4.7.0)
+  - SensorsAnalyticsSDK/AutoTrack (4.7.0):
+    - SensorsAnalyticsSDK/Common
+  - SensorsAnalyticsSDK/Base (4.7.0):
+    - SensorsAnalyticsSDK/__Store
+  - SensorsAnalyticsSDK/Common (4.7.0):
+    - SensorsAnalyticsSDK/Base
+  - SensorsAnalyticsSDK/Core (4.7.0):
+    - SensorsAnalyticsSDK/Base
+    - SensorsAnalyticsSDK/Common
+    - SensorsAnalyticsSDK/Visualized
+  - SensorsAnalyticsSDK/Exception (4.7.0):
+    - SensorsAnalyticsSDK/Common
+  - SensorsAnalyticsSDK/Exposure (4.7.0):
+    - SensorsAnalyticsSDK/Common
+  - SensorsAnalyticsSDK/Visualized (4.7.0):
+    - SensorsAnalyticsSDK/AutoTrack
+  - SnapKit (5.6.0)
+  - SparkVenders (0.1.0):
+    - ASIHTTPRequest
+    - SDCycleScrollView
+    - SDWebImage (= 4.4.8)
+    - SensorsAnalyticsSDK/Core
+    - SensorsAnalyticsSDK/Exception
+    - SensorsAnalyticsSDK/Exposure
+    - SnapKit
+    - SparkVenders/FJDeepSleepPreventer (= 0.1.0)
+    - SparkVenders/RSKImageCropper (= 0.1.0)
+    - SparkVenders/SPEUploadPhoto (= 0.1.0)
+    - "SparkVenders/XLPhotoBrowser+CoderXL (= 0.1.0)"
+    - SparkVenders/ZLPhotoLib (= 0.1.0)
+    - TZImagePickerController
+  - SparkVenders/FJDeepSleepPreventer (0.1.0):
+    - ASIHTTPRequest
+    - SDCycleScrollView
+    - SDWebImage (= 4.4.8)
+    - SensorsAnalyticsSDK/Core
+    - SensorsAnalyticsSDK/Exception
+    - SensorsAnalyticsSDK/Exposure
+    - SnapKit
+    - TZImagePickerController
+  - SparkVenders/RSKImageCropper (0.1.0):
+    - ASIHTTPRequest
+    - SDCycleScrollView
+    - SDWebImage (= 4.4.8)
+    - SensorsAnalyticsSDK/Core
+    - SensorsAnalyticsSDK/Exception
+    - SensorsAnalyticsSDK/Exposure
+    - SnapKit
+    - TZImagePickerController
+  - SparkVenders/SPEUploadPhoto (0.1.0):
+    - ASIHTTPRequest
+    - SDCycleScrollView
+    - SDWebImage (= 4.4.8)
+    - SensorsAnalyticsSDK/Core
+    - SensorsAnalyticsSDK/Exception
+    - SensorsAnalyticsSDK/Exposure
+    - SnapKit
+    - TZImagePickerController
+  - "SparkVenders/XLPhotoBrowser+CoderXL (0.1.0)":
+    - ASIHTTPRequest
+    - SDCycleScrollView
+    - SDWebImage (= 4.4.8)
+    - SensorsAnalyticsSDK/Core
+    - SensorsAnalyticsSDK/Exception
+    - SensorsAnalyticsSDK/Exposure
+    - SnapKit
+    - TZImagePickerController
+  - SparkVenders/ZLPhotoLib (0.1.0):
+    - ASIHTTPRequest
+    - SDCycleScrollView
+    - SDWebImage (= 4.4.8)
+    - SensorsAnalyticsSDK/Core
+    - SensorsAnalyticsSDK/Exception
+    - SensorsAnalyticsSDK/Exposure
+    - SnapKit
+    - TZImagePickerController
+  - TZImagePickerController (3.8.4):
+    - TZImagePickerController/Basic (= 3.8.4)
+    - TZImagePickerController/Location (= 3.8.4)
+  - TZImagePickerController/Basic (3.8.4)
+  - TZImagePickerController/Location (3.8.4)
 
 DEPENDENCIES:
   - FBSnapshotTestCase (~> 2.1.4)
@@ -12,15 +112,29 @@ DEPENDENCIES:
 
 SPEC REPOS:
   trunk:
+    - ASIHTTPRequest
     - FBSnapshotTestCase
+    - Reachability
+    - SDCycleScrollView
+    - SDWebImage
+    - SensorsAnalyticsSDK
+    - SnapKit
+    - TZImagePickerController
 
 EXTERNAL SOURCES:
   SparkVenders:
     :path: "../"
 
 SPEC CHECKSUMS:
+  ASIHTTPRequest: ec013992946676b7978dcbde6396d57312d21db4
   FBSnapshotTestCase: 094f9f314decbabe373b87cc339bea235a63e07a
-  SparkVenders: 60fd88927c0e98320fc844f1d269b9b1e340c951
+  Reachability: 33e18b67625424e47b6cde6d202dce689ad7af96
+  SDCycleScrollView: 884b88f0266dd4708a0e1934975c69cb971707b1
+  SDWebImage: 783af2c3fa36291a250030c4752ee370a9a51d13
+  SensorsAnalyticsSDK: 90769576f5a52f55ddc20ca3689a20c85a305f81
+  SnapKit: e01d52ebb8ddbc333eefe2132acf85c8227d9c25
+  SparkVenders: 08bf7f36d60aa4a0be8e6d7a3d76a3b8d3416e63
+  TZImagePickerController: f1c9f1cae6ac0e30b31aaa9698f9bf4a7cf5b84f
 
 PODFILE CHECKSUM: 1ce3f16c049fc10fb06ae8c499889f95f4dece4b
 
