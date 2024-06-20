@@ -50,37 +50,37 @@ TODO: Add long description of the pod here.
   s.dependency 'SDWebImage', '4.4.8'
   
   s.subspec 'FJDeepSleepPreventer' do |ss|
-      ss.source_files = 'AppVenders/Classes/FJDeepSleepPreventer/**/*'
+      ss.source_files = 'SparkVenders/Classes/FJDeepSleepPreventer/**/*'
       ss.resource_bundles = {
-            'FJDeepSleepPreventer' => ['AppVenders/Assets/FJDeepSleepPreventer/*.wav'],
+            'FJDeepSleepPreventer' => ['SparkVenders/Assets/FJDeepSleepPreventer/*.wav'],
         }
   end
   
   s.subspec 'XLPhotoBrowser+CoderXL' do |ss|
-      ss.source_files = 'AppVenders/Classes/XLPhotoBrowser+CoderXL/**/*'
+      ss.source_files = 'SparkVenders/Classes/XLPhotoBrowser+CoderXL/**/*'
       ss.resource_bundles = {
-            'XLPhotoBrowser+CoderXL' => ['AppVenders/Assets/XLPhotoBrowser+CoderXL/*.png'],
+            'XLPhotoBrowser+CoderXL' => ['SparkVenders/Assets/XLPhotoBrowser+CoderXL/*.png'],
         }
   end
   
   s.subspec 'RSKImageCropper' do |ss|
-      ss.source_files = 'AppVenders/Classes/RSKImageCropper/**/*'
+      ss.source_files = 'SparkVenders/Classes/RSKImageCropper/**/*'
       ss.resource_bundles = {
-            'RSKImageCropper' => ['AppVenders/Assets/RSKImageCropper/*.bundle'],
+            'RSKImageCropper' => ['SparkVenders/Assets/RSKImageCropper/*.bundle'],
         }
   end
   
   s.subspec 'SPEUploadPhoto' do |ss|
-      ss.source_files = 'AppVenders/Classes/SPEUploadPhoto/**/*'
+      ss.source_files = 'SparkVenders/Classes/SPEUploadPhoto/**/*'
       ss.resource_bundles = {
-            'SPEUploadPhoto' => ['AppVenders/Assets/SPEUploadPhoto/*.xib'],
+            'SPEUploadPhoto' => ['SparkVenders/Assets/SPEUploadPhoto/*.xib'],
         }
   end
   
   s.subspec 'ZLPhotoLib' do |ss|
-      ss.source_files = 'AppVenders/Classes/ZLPhotoLib/**/*'
+      ss.source_files = 'SparkVenders/Classes/ZLPhotoLib/**/*'
       ss.resource_bundles = {
-            'ZLPhotoLib' => ['AppVenders/Assets/ZLPhotoLib/*.bundle'],
+            'ZLPhotoLib' => ['SparkVenders/Assets/ZLPhotoLib/*.bundle'],
         }
   end
   
