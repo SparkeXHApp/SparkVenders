@@ -344,8 +344,12 @@ static NSString * getMD5String(NSString *str) {
         
         if (receipt.state == MCDownloadStateCompleted && receipt.totalBytesWritten == receipt.totalBytesExpectedToWrite) {
             dispatch_async(dispatch_get_main_queue(), ^{
+                //swift oc 桥接问题
                 if (receipt.successBlock) {
-                    receipt.successBlock(nil,nil,[NSURL URLWithString:receipt.url]);
+                    receipt.successBlock([NSURLRequest requestWithURL:[NSURL URLWithString:receipt.url]],
+                                         [[NSHTTPURLResponse alloc] initWithURL:[NSURL URLWithString:receipt.url] statusCode:200 HTTPVersion:@"1.0" headerFields:@{}],
+                                         [NSURL URLWithString:receipt.url]);
+
                 }
             });
             return ;
@@ -408,7 +412,10 @@ static NSString * getMD5String(NSString *str) {
         if (receipt.state == MCDownloadStateCompleted && receipt.totalBytesWritten == receipt.totalBytesExpectedToWrite) {
             dispatch_async(dispatch_get_main_queue(), ^{
                 if (receipt.successBlock) {
-                    receipt.successBlock(nil,nil,[NSURL URLWithString:receipt.url]);
+                    receipt.successBlock([NSURLRequest requestWithURL:[NSURL URLWithString:receipt.url]],
+                                         [[NSHTTPURLResponse alloc] initWithURL:[NSURL URLWithString:receipt.url] statusCode:200 HTTPVersion:@"1.0" headerFields:@{}],
+                                         [NSURL URLWithString:receipt.url]);
+
                 }
             });
             return ;
